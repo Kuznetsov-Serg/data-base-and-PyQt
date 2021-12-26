@@ -61,9 +61,11 @@ def method_decorator(func_to_log, is_static=False):
     def wrapper(self, *args, **kwargs):
         func_name = func_to_log.__name__ if hasattr(func_to_log, '__name__') else \
             func_to_log.name if hasattr(func_to_log, 'name') else ''
-        LOGGER.debug(f'Была вызвана функция {func_name} c параметрами {args}, {kwargs}. '
+        args_all = [self].extend(args) if is_static else args
+        LOGGER.debug(f'Была вызвана функция {func_name} c параметрами {args_all}, {kwargs}. '
                      f'Вызов из модуля {func_to_log.__module__}.'
                      f'Вызов из функции {traceback.format_stack()[0].strip().split()[-1]}.'
                      f'Вызов из функции {inspect.stack()[1][3]}')
-        return func_to_log(*args, **kwargs) if is_static else func_to_log(self, *args, **kwargs)
+        return func_to_log(self, *args, **kwargs)
+        # return func_to_log(*args, **kwargs) if is_static else func_to_log(self, *args, **kwargs)
     return wrapper

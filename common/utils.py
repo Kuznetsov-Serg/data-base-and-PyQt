@@ -29,7 +29,7 @@ def add_default_in_arg_parser(default_dict={}):
     return parser.parse_args(sys.argv[1:])
 
 
-@log_class
+# @log_class
 class MessageHandle:
     @staticmethod
     def get_message(client):
