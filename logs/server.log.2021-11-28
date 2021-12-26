@@ -1,0 +1,16 @@
+2021-11-28 04:05:45,389 DEBUG    server.py Получено сообщение {'action': 'presence', 'time': 1638061545.3888261, 'user': {'account_name': 'Guest'}}
+2021-11-28 04:05:45,389 DEBUG    server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1638061545.3888261, 'user': {'account_name': 'Guest'}}
+2021-11-28 04:05:45,389 INFO     server.py Сформирован ответ клиенту {'response': 200}
+2021-11-28 04:05:45,389 DEBUG    server.py Соединение с клиентом ('127.0.0.1', 59883) закрывается.
+2021-11-28 04:05:48,334 DEBUG    server.py Получено сообщение {'action': 'presence', 'time': 1638061548.334008, 'user': {'account_name': 'Guest'}}
+2021-11-28 04:05:48,335 DEBUG    server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1638061548.334008, 'user': {'account_name': 'Guest'}}
+2021-11-28 04:05:48,335 INFO     server.py Сформирован ответ клиенту {'response': 200}
+2021-11-28 04:05:48,335 DEBUG    server.py Соединение с клиентом ('127.0.0.1', 59888) закрывается.
+2021-11-28 04:05:48,793 DEBUG    server.py Получено сообщение {'action': 'presence', 'time': 1638061548.7932281, 'user': {'account_name': 'Guest'}}
+2021-11-28 04:05:48,793 DEBUG    server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1638061548.7932281, 'user': {'account_name': 'Guest'}}
+2021-11-28 04:05:48,794 INFO     server.py Сформирован ответ клиенту {'response': 200}
+2021-11-28 04:05:48,794 DEBUG    server.py Соединение с клиентом ('127.0.0.1', 59889) закрывается.
+2021-11-28 04:05:49,057 DEBUG    server.py Получено сообщение {'action': 'presence', 'time': 1638061549.056035, 'user': {'account_name': 'Guest'}}
+2021-11-28 04:05:49,057 DEBUG    server.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1638061549.056035, 'user': {'account_name': 'Guest'}}
+2021-11-28 04:05:49,057 INFO     server.py Сформирован ответ клиенту {'response': 200}
+2021-11-28 04:05:49,058 DEBUG    server.py Соединение с клиентом ('127.0.0.1', 59890) закрывается.
