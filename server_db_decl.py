@@ -48,14 +48,42 @@ class ServerDB:
             self.port = port
             self.last_login = last_login
 
-    def __init__(self):
+    # Класс - отображение таблицы контактов пользователей
+    class UsersContacts(Base):
+        __tablename__ = 'contacts'
+        id = Column(Integer, primary_key=True)
+        user = Column(String, ForeignKey('all_users.id'))
+        contact = Column(String, ForeignKey('all_users.id'))
+
+        def __init__(self, user, contact):
+            self.id = None
+            self.user = user
+            self.contact = contact
+
+    # Класс отображение таблицы истории действий
+    class UsersHistory(Base):
+        __tablename__ = 'history'
+        id = Column(Integer, primary_key=True)
+        user = Column(String, ForeignKey('all_users.id'))
+        sent = Column(Integer)
+        accepted = Column(Integer)
+
+        def __init__(self, user):
+            self.id = None
+            self.user = user
+            self.sent = 0
+            self.accepted = 0
+
+    def __init__(self, path):
         # Создаём движок базы данных
-        # SERVER_DATABASE - sqlite:///server_base.db3
+        # path - server_base.db3
         # echo=False - отключает вывод на экран sql-запросов)
         # pool_recycle - по умолчанию соединение с БД через 8 часов простоя обрывается
         # Чтобы этого не случилось необходимо добавить pool_recycle=7200 (переустановка
         #    соединения через каждые 2 часа)
-        self.engine = create_engine('sqlite:///server_base.db3', echo=False, pool_recycle=7200)
+        # check_same_thread - защищает от ошибок обновления БД из разных потоков
+        self.engine = create_engine(f'sqlite:///{path}', echo=False, pool_recycle=7200,
+                                    connect_args={'check_same_thread': False})
 
         # Создаём таблицы
         self.Base.metadata.create_all(self.engine)
@@ -111,6 +139,58 @@ class ServerDB:
         # Применяем изменения
         self.session.commit()
 
+    # Функция фиксирует передачу сообщения и делает соответствующие отметки в БД
+    def process_message(self, sender, recipient):
+        # Получаем ID отправителя и получателя
+        sender = self.session.query(self.AllUsers).filter_by(name=sender).first().id
+        recipient = self.session.query(self.AllUsers).filter_by(name=recipient).first().id
+        # Запрашиваем строки из истории и увеличиваем счётчики
+        sender_row = self.session.query(self.UsersHistory).filter_by(user=sender).first()
+        if sender_row == None:
+            # Создаем экземпляр класса
+            sender_row = self.UsersHistory(sender)
+            self.session.add(sender_row)
+        sender_row.sent += 1
+        recipient_row = self.session.query(self.UsersHistory).filter_by(user=recipient).first()
+        if recipient_row == None:
+            # Создаем экземпляр класса
+            recipient_row = self.UsersHistory(recipient)
+            self.session.add(recipient_row)
+        recipient_row.accepted += 1
+        self.session.commit()
+
+    # Функция добавляет контакт для пользователя.
+    def add_contact(self, user, contact):
+        # Получаем ID пользователей
+        user = self.session.query(self.AllUsers).filter_by(name=user).first()
+        contact = self.session.query(self.AllUsers).filter_by(name=contact).first()
+
+        # Проверяем что не дубль и что контакт может существовать (полю пользователь мы доверяем)
+        if not contact or self.session.query(self.UsersContacts).filter_by(user=user.id, contact=contact.id).count():
+            return
+
+        # Создаём объект и заносим его в базу
+        contact_row = self.UsersContacts(user.id, contact.id)
+        self.session.add(contact_row)
+        self.session.commit()
+
+    # Функция удаляет контакт из базы данных
+    def remove_contact(self, user, contact):
+        # Получаем ID пользователей
+        user = self.session.query(self.AllUsers).filter_by(name=user).first()
+        contact = self.session.query(self.AllUsers).filter_by(name=contact).first()
+
+        # Проверяем что контакт может существовать (полю пользователь мы доверяем)
+        if not contact:
+            return
+
+        # Удаляем требуемое
+        print(self.session.query(self.UsersContacts).filter(
+            self.UsersContacts.user == user.id,
+            self.UsersContacts.contact == contact.id
+        ).delete())
+        self.session.commit()
+
     # Функция возвращает список известных пользователей со временем последнего входа.
     def users_list(self):
         query = self.session.query(
@@ -128,7 +208,7 @@ class ServerDB:
             self.ActiveUsers.ip,
             self.ActiveUsers.port,
             self.ActiveUsers.login_time
-            ).join(self.AllUsers)
+        ).join(self.AllUsers)
         # Возвращаем список тюплов
         return query.all()
 
@@ -146,9 +226,35 @@ class ServerDB:
         return query.all()
 
 
+    # Функция возвращает список контактов пользователя.
+    def get_contacts(self, username):
+        # Запрашиваем указанного пользователя
+        user = self.session.query(self.AllUsers).filter_by(name=username).one()
+
+        # Запрашиваем его список контактов
+        query = self.session.query(self.UsersContacts, self.AllUsers.name). \
+            filter_by(user=user.id). \
+            join(self.AllUsers, self.UsersContacts.contact == self.AllUsers.id)
+
+        # выбираем только имена пользователей и возвращаем их.
+        return [contact[1] for contact in query.all()]
+
+
+    # Функция возвращает количество переданных и полученных сообщений
+    def message_history(self):
+        query = self.session.query(
+            self.AllUsers.name,
+            self.AllUsers.last_login,
+            self.UsersHistory.sent,
+            self.UsersHistory.accepted
+        ).join(self.AllUsers)
+        # Возвращаем список кортежей
+        return query.all()
+
+
 # Отладка
 if __name__ == '__main__':
-    db = ServerDB()
+    db = ServerDB('server_base.db3')
 
     # Выполняем "подключение" пользователей
     db.user_login('client_1', '192.168.1.4', 8888)
@@ -172,5 +278,10 @@ if __name__ == '__main__':
     # и выводим список известных пользователей
     print(' ---- users_list() ----')
     print(db.users_list())
+
+    # Запрашиваем историю сообщений
+    db.process_message('client_1', 'client_2')
+    print(' ---- message_history ----')
+    print(db.message_history())
 
 

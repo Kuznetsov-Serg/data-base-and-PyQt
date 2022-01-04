@@ -99,13 +99,9 @@ class ClientMaker(type):
         for command in ('accept', 'listen'):
             if command in methods:
                 raise TypeError(f'В классе обнаружено использование запрещённого метода {command}')
-        # Перечень обязательных к использованию методов
-        required_methods = ['message_from_server', 'user_interactive', 'create_message', 'create_presence',
-                            'get_message', 'send_message', 'create_exit_message']
-        for method in required_methods:
-            if not (method in methods or method in attrs):
-                raise TypeError(f'Отсутствует обязательный к использованию метод {method}.')
-        # Если сокет не инициализировался константами SOCK_STREAM(TCP) AF_INET(IPv4), тоже исключение.
-        if not ('SOCK_STREAM' in attrs and 'AF_INET' in attrs):
-            raise TypeError('Некорректная инициализация сокета.')
+        # Вызов get_message или send_message из utils считаем корректным использованием сокетов
+        if 'get_message' in methods or 'send_message' in methods:
+            pass
+        else:
+            raise TypeError('Отсутствуют вызовы функций, работающих с сокетами.')
         super().__init__(clsname, bases, clsdict)
