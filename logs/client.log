@@ -2851,3 +2851,431 @@ Taram param
 Сообщение Кузнецову от ...
 2021-12-26 20:51:51,536 DEBUG    decos.py Была вызвана функция print_history c параметрами (), {}. Вызов из модуля __main__.Вызов из функции self._bootstrap_inner().Вызов из функции run
 2021-12-26 20:52:09,289 DEBUG    decos.py Была вызвана функция print_history c параметрами (), {}. Вызов из модуля __main__.Вызов из функции self._bootstrap_inner().Вызов из функции run
+2022-01-04 13:57:03,266 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 13:57:10,941 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 13:58:05,751 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 13:58:11,535 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 13:59:01,016 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 13:59:05,202 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 13:59:05,234 INFO     transport.py Попытка подключения №1
+2022-01-04 13:59:05,238 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 13:59:22,068 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 13:59:26,565 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 14:00:03,230 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 14:00:13,776 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 14:00:13,806 INFO     transport.py Попытка подключения №1
+2022-01-04 14:00:13,810 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 14:06:38,961 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 14:06:45,045 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 14:06:45,080 INFO     transport.py Попытка подключения №1
+2022-01-04 14:06:45,084 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 14:06:45,084 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 14:06:45,085 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51655), raddr=('127.0.0.1', 7777)>, 'time': 1641294405.084932, 'mess_text': {'action': 'presence', 'time': 1641294405.084851, 'user': {'account_name': 'kuznetsov'}}}
+2022-01-04 14:09:44,394 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 14:09:57,899 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 14:09:57,935 INFO     transport.py Попытка подключения №1
+2022-01-04 14:09:57,939 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 14:09:57,939 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 14:09:57,940 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': <socket.socket fd=16, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51662), raddr=('127.0.0.1', 7777)>, 'time': 1641294597.93996, 'mess_text': {'action': 'presence', 'time': 1641294597.939879, 'user': {'account_name': 'kuznetsov'}}}
+2022-01-04 14:15:20,290 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 14:15:24,996 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 14:15:25,031 DEBUG    decos.py Была вызвана функция connection_init c параметрами (7777, '127.0.0.1'), {}. Вызов из модуля client.transport.Вызов из функции main().Вызов из функции __init__
+2022-01-04 14:15:25,031 INFO     transport.py Попытка подключения №1
+2022-01-04 14:15:25,035 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 14:15:25,036 DEBUG    decos.py Была вызвана функция create_presence c параметрами (), {}. Вызов из модуля client.transport.Вызов из функции main().Вызов из функции connection_init
+2022-01-04 14:15:25,036 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 14:15:25,036 DEBUG    decos.py Была вызвана функция send_message c параметрами (<socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51681), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1641294925.036327, 'user': {'account_name': 'kuznetsov'}}), {}. Вызов из модуля client.transport.Вызов из функции main().Вызов из функции connection_init
+2022-01-04 14:15:25,036 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51681), raddr=('127.0.0.1', 7777)>, 'time': 1641294925.036891, 'mess_text': {'action': 'presence', 'time': 1641294925.036327, 'user': {'account_name': 'kuznetsov'}}}
+2022-01-04 14:17:56,917 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 14:18:14,309 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 14:18:14,343 INFO     transport.py Попытка подключения №1
+2022-01-04 14:18:14,347 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 14:18:14,347 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 14:18:14,347 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': <socket.socket fd=16, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51710), raddr=('127.0.0.1', 7777)>, 'time': 1641295094.34756, 'mess_text': {'action': 'presence', 'time': 1641295094.347489, 'user': {'account_name': 'kuznetsov'}}}
+2022-01-04 14:28:27,768 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 14:28:35,481 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 14:28:35,512 INFO     transport.py Попытка подключения №1
+2022-01-04 14:28:35,516 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 14:28:35,516 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 14:28:35,516 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51773), raddr=('127.0.0.1', 7777)>, 'time': 1641295715.5166998, 'mess_text': {'action': 'presence', 'time': 1641295715.516618, 'user': {'account_name': 'kuznetsov'}}}
+2022-01-04 14:31:34,440 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 14:31:40,132 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 14:31:40,161 INFO     transport.py Попытка подключения №1
+2022-01-04 14:31:40,166 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 14:31:40,166 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 14:31:40,166 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51785), raddr=('127.0.0.1', 7777)>, 'time': 1641295900.1664882, 'mess_text': {'action': 'presence', 'time': 1641295900.166385, 'user': {'account_name': 'kuznetsov'}}}
+2022-01-04 14:40:34,011 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 14:40:39,669 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 14:40:39,698 INFO     transport.py Попытка подключения №1
+2022-01-04 14:40:39,702 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 14:40:39,703 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 14:40:39,703 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51813), raddr=('127.0.0.1', 7777)>, 'time': 1641296439.703158, 'mess_text': {'action': 'presence', 'time': 1641296439.70308, 'user': {'account_name': 'kuznetsov'}}}
+2022-01-04 14:41:34,406 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 14:41:39,326 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 14:41:39,356 INFO     transport.py Попытка подключения №1
+2022-01-04 14:41:39,360 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 14:41:39,361 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 14:41:39,361 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51817), raddr=('127.0.0.1', 7777)>, 'time': 1641296499.3610811, 'mess_text': {'action': 'presence', 'time': 1641296499.360998, 'user': {'account_name': 'kuznetsov'}}}
+2022-01-04 15:06:22,367 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 15:06:27,289 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: petrov
+2022-01-04 15:06:27,321 INFO     transport.py Попытка подключения №1
+2022-01-04 15:06:27,325 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 15:06:27,325 DEBUG    transport.py Сформировано presence сообщение для пользователя petrov
+2022-01-04 15:06:27,325 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'petrov', 'to': <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51992), raddr=('127.0.0.1', 7777)>, 'time': 1641297987.325355, 'mess_text': {'action': 'presence', 'time': 1641297987.325265, 'user': {'account_name': 'petrov'}}}
+2022-01-04 15:23:33,829 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 15:23:39,194 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 15:23:39,223 INFO     transport.py Попытка подключения №1
+2022-01-04 15:23:39,228 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 15:23:39,228 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 15:23:39,228 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52084), raddr=('127.0.0.1', 7777)>, 'time': 1641299019.228294, 'mess_text': {'action': 'presence', 'time': 1641299019.228213, 'user': {'account_name': 'kuznetsov'}}}
+2022-01-04 15:28:21,190 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 15:28:35,591 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 15:28:35,634 INFO     transport.py Попытка подключения №1
+2022-01-04 15:28:35,638 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 15:28:35,638 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 15:28:35,639 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': <socket.socket fd=18, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52107), raddr=('127.0.0.1', 7777)>, 'time': 1641299315.6390631, 'mess_text': {'action': 'presence', 'time': 1641299315.638956, 'user': {'account_name': 'kuznetsov'}}}
+2022-01-04 15:29:25,064 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 15:29:32,879 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 15:31:20,424 INFO     transport.py Попытка подключения №1
+2022-01-04 15:32:03,860 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 15:32:33,619 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 15:32:43,003 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': <socket.socket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52128), raddr=('127.0.0.1', 7777)>, 'time': 1641299560.968313, 'mess_text': {'action': 'presence', 'time': 1641299546.0858712, 'user': {'account_name': 'kuznetsov'}}}
+2022-01-04 15:36:39,535 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 15:36:47,895 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: petrov
+2022-01-04 15:39:26,952 INFO     transport.py Попытка подключения №1
+2022-01-04 15:39:46,673 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 15:40:13,417 DEBUG    transport.py Сформировано presence сообщение для пользователя petrov
+2022-01-04 15:40:17,267 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'petrov', 'to': <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52180), raddr=('127.0.0.1', 7777)>, 'time': 1641300016.04293, 'mess_text': {'action': 'presence', 'time': 1641300008.884925, 'user': {'account_name': 'petrov'}}}
+2022-01-04 15:53:19,432 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции main().Вызов из функции main
+2022-01-04 15:53:24,878 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 15:53:31,113 INFO     transport.py Попытка подключения №1
+2022-01-04 15:53:31,120 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 15:53:31,120 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 15:53:31,120 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': <socket.socket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52264), raddr=('127.0.0.1', 7777)>, 'time': 1641300811.120686, 'mess_text': {'action': 'presence', 'time': 1641300811.12046, 'user': {'account_name': 'kuznetsov'}}}
+2022-01-04 16:01:23,220 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:01:28,678 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: petrov
+2022-01-04 16:01:28,708 INFO     transport.py Попытка подключения №1
+2022-01-04 16:01:28,713 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:01:28,713 DEBUG    transport.py Сформировано presence сообщение для пользователя petrov
+2022-01-04 16:01:28,713 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'petrov', 'to': <socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52305), raddr=('127.0.0.1', 7777)>, 'time': 1641301288.713392, 'mess_text': {'action': 'presence', 'time': 1641301288.71331, 'user': {'account_name': 'petrov'}}}
+2022-01-04 16:17:34,364 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:17:39,498 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 16:17:39,535 INFO     transport.py Попытка подключения №1
+2022-01-04 16:17:39,539 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:17:39,540 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 16:17:44,541 CRITICAL transport.py Потеряно соединение с сервером!
+2022-01-04 16:18:16,472 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:18:21,245 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: petrov
+2022-01-04 16:18:21,276 INFO     transport.py Попытка подключения №1
+2022-01-04 16:18:21,280 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:18:21,280 DEBUG    transport.py Сформировано presence сообщение для пользователя petrov
+2022-01-04 16:18:21,802 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:18:21,802 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:18:21,802 DEBUG    transport.py Запрос списка известных пользователей petrov
+2022-01-04 16:18:22,317 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:18:22,317 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641302302.317694, 'user': 'petrov'}
+2022-01-04 16:18:22,813 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['kuznetsov', 'qqq']}
+2022-01-04 16:18:22,830 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:18:57,386 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:19:02,132 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 16:19:02,161 INFO     transport.py Попытка подключения №1
+2022-01-04 16:19:02,165 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:19:02,165 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 16:19:02,171 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:19:02,171 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:19:02,171 DEBUG    transport.py Запрос списка известных пользователей kuznetsov
+2022-01-04 16:19:02,685 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:19:02,686 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641302342.6859882, 'user': 'kuznetsov'}
+2022-01-04 16:19:03,178 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['petrov', 'qqq', 'client_2']}
+2022-01-04 16:19:03,195 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:19:28,892 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'petrov', 'to': 'kuznetsov', 'time': 1641302368.892891, 'mess_text': 'Проверка связи\n'}
+2022-01-04 16:19:29,766 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:19:29,766 INFO     transport.py Отправлено сообщение для пользователя kuznetsov
+2022-01-04 16:19:29,769 DEBUG    main_window.py Отправлено сообщение для kuznetsov: Проверка связи
+
+2022-01-04 16:19:29,783 DEBUG    transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'petrov', 'to': 'kuznetsov', 'time': 1641302368.892891, 'mess_text': 'Проверка связи\n'}
+2022-01-04 16:19:29,783 DEBUG    transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'petrov', 'to': 'kuznetsov', 'time': 1641302368.892891, 'mess_text': 'Проверка связи\n'}
+2022-01-04 16:19:29,783 DEBUG    transport.py Получено сообщение от пользователя petrov:Проверка связи
+
+2022-01-04 16:19:46,020 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': 'petrov', 'time': 1641302386.020268, 'mess_text': 'Привет!'}
+2022-01-04 16:19:46,821 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:19:46,821 INFO     transport.py Отправлено сообщение для пользователя petrov
+2022-01-04 16:19:46,822 DEBUG    transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'kuznetsov', 'to': 'petrov', 'time': 1641302386.020268, 'mess_text': 'Привет!'}
+2022-01-04 16:19:46,823 DEBUG    transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'kuznetsov', 'to': 'petrov', 'time': 1641302386.020268, 'mess_text': 'Привет!'}
+2022-01-04 16:19:46,823 DEBUG    transport.py Получено сообщение от пользователя kuznetsov:Привет!
+2022-01-04 16:19:46,824 DEBUG    main_window.py Отправлено сообщение для petrov: Привет!
+2022-01-04 16:20:40,782 DEBUG    transport.py Потеряно соединение с сервером.
+2022-01-04 16:20:40,782 DEBUG    transport.py Потеряно соединение с сервером.
+2022-01-04 16:20:51,962 DEBUG    transport.py Транспорт завершает работу.
+2022-01-04 16:20:56,110 DEBUG    transport.py Транспорт завершает работу.
+2022-01-04 16:21:07,501 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:21:11,222 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: зуекщм
+2022-01-04 16:21:11,259 INFO     transport.py Попытка подключения №1
+2022-01-04 16:21:11,263 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:21:11,263 DEBUG    transport.py Сформировано presence сообщение для пользователя зуекщм
+2022-01-04 16:21:11,787 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:21:11,788 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:21:11,788 DEBUG    transport.py Запрос списка известных пользователей зуекщм
+2022-01-04 16:21:12,303 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:21:12,303 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641302472.303413, 'user': 'зуекщм'}
+2022-01-04 16:21:12,798 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-01-04 16:21:12,798 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:21:16,678 DEBUG    transport.py Транспорт завершает работу.
+2022-01-04 16:21:16,813 DEBUG    transport.py Потеряно соединение с сервером.
+2022-01-04 16:21:20,942 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:21:24,287 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: petrov
+2022-01-04 16:21:24,318 INFO     transport.py Попытка подключения №1
+2022-01-04 16:21:24,322 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:21:24,323 DEBUG    transport.py Сформировано presence сообщение для пользователя petrov
+2022-01-04 16:21:24,833 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:21:24,833 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:21:24,833 DEBUG    transport.py Запрос списка известных пользователей petrov
+2022-01-04 16:21:25,347 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:21:25,347 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641302485.347908, 'user': 'petrov'}
+2022-01-04 16:21:25,839 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['kuznetsov', 'qqq']}
+2022-01-04 16:21:25,857 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:21:28,449 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:21:32,561 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 16:21:32,590 INFO     transport.py Попытка подключения №1
+2022-01-04 16:21:32,595 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:21:32,595 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 16:21:33,107 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:21:33,107 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:21:33,107 DEBUG    transport.py Запрос списка известных пользователей kuznetsov
+2022-01-04 16:21:33,620 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:21:33,621 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641302493.621021, 'user': 'kuznetsov'}
+2022-01-04 16:21:34,112 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['petrov', 'qqq', 'client_2']}
+2022-01-04 16:21:34,134 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:25:58,019 DEBUG    transport.py Потеряно соединение с сервером.
+2022-01-04 16:25:58,019 DEBUG    transport.py Потеряно соединение с сервером.
+2022-01-04 16:26:15,253 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:26:21,023 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 16:26:21,053 INFO     transport.py Попытка подключения №1
+2022-01-04 16:26:21,057 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:26:21,057 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 16:26:21,578 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:26:21,578 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:26:21,578 DEBUG    transport.py Запрос списка известных пользователей kuznetsov
+2022-01-04 16:26:22,093 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:26:22,094 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641302782.094078, 'user': 'kuznetsov'}
+2022-01-04 16:26:22,589 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['petrov', 'qqq', 'client_2']}
+2022-01-04 16:26:22,609 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:26:34,330 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:26:39,345 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: petrov
+2022-01-04 16:26:39,373 INFO     transport.py Попытка подключения №1
+2022-01-04 16:26:39,378 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:26:39,378 DEBUG    transport.py Сформировано presence сообщение для пользователя petrov
+2022-01-04 16:26:39,892 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:26:39,892 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:26:39,892 DEBUG    transport.py Запрос списка известных пользователей petrov
+2022-01-04 16:26:40,405 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:26:40,405 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641302800.4052129, 'user': 'petrov'}
+2022-01-04 16:26:40,898 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['kuznetsov', 'qqq']}
+2022-01-04 16:26:40,916 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:26:47,969 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'petrov', 'to': 'kuznetsov', 'time': 1641302807.9691908, 'mess_text': 'Test\n'}
+2022-01-04 16:26:48,925 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:26:48,925 INFO     transport.py Отправлено сообщение для пользователя kuznetsov
+2022-01-04 16:26:48,929 DEBUG    main_window.py Отправлено сообщение для kuznetsov: Test
+
+2022-01-04 16:26:49,182 DEBUG    transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'petrov', 'to': 'kuznetsov', 'time': 1641302807.9691908, 'mess_text': 'Test\n'}
+2022-01-04 16:26:49,183 DEBUG    transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'petrov', 'to': 'kuznetsov', 'time': 1641302807.9691908, 'mess_text': 'Test\n'}
+2022-01-04 16:26:49,183 DEBUG    transport.py Получено сообщение от пользователя petrov:Test
+
+2022-01-04 16:27:02,368 DEBUG    transport.py Потеряно соединение с сервером.
+2022-01-04 16:27:02,994 DEBUG    transport.py Потеряно соединение с сервером.
+2022-01-04 16:27:04,461 DEBUG    transport.py Транспорт завершает работу.
+2022-01-04 16:27:06,453 DEBUG    transport.py Транспорт завершает работу.
+2022-01-04 16:46:40,733 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:46:48,018 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 16:46:48,048 INFO     transport.py Попытка подключения №1
+2022-01-04 16:46:48,052 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:46:48,052 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 16:46:48,076 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:46:48,077 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:46:48,077 DEBUG    transport.py Запрос списка известных пользователей kuznetsov
+2022-01-04 16:46:48,594 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:46:48,594 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641304008.594174, 'user': 'kuznetsov'}
+2022-01-04 16:46:49,094 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['petrov', 'qqq', 'client_2']}
+2022-01-04 16:46:49,117 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:46:55,884 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': 'petrov', 'time': 1641304015.883978, 'mess_text': 'Test\n'}
+2022-01-04 16:46:56,106 DEBUG    transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Пользователь не зарегистрирован на сервере.'}
+2022-01-04 16:47:01,670 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:47:05,131 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: petrov
+2022-01-04 16:47:05,162 INFO     transport.py Попытка подключения №1
+2022-01-04 16:47:05,166 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:47:05,167 DEBUG    transport.py Сформировано presence сообщение для пользователя petrov
+2022-01-04 16:47:05,176 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:47:05,176 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:47:05,176 DEBUG    transport.py Запрос списка известных пользователей petrov
+2022-01-04 16:47:05,691 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:47:05,691 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641304025.691873, 'user': 'petrov'}
+2022-01-04 16:47:06,190 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['kuznetsov', 'qqq']}
+2022-01-04 16:47:06,208 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:47:14,700 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'petrov', 'to': 'kuznetsov', 'time': 1641304034.700779, 'mess_text': 'Hi\n'}
+2022-01-04 16:47:14,741 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:47:14,741 INFO     transport.py Отправлено сообщение для пользователя kuznetsov
+2022-01-04 16:47:14,746 DEBUG    main_window.py Отправлено сообщение для kuznetsov: Hi
+
+2022-01-04 16:47:15,692 DEBUG    transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'petrov', 'to': 'kuznetsov', 'time': 1641304034.700779, 'mess_text': 'Hi\n'}
+2022-01-04 16:47:15,693 DEBUG    transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'petrov', 'to': 'kuznetsov', 'time': 1641304034.700779, 'mess_text': 'Hi\n'}
+2022-01-04 16:47:15,693 DEBUG    transport.py Получено сообщение от пользователя petrov:Hi
+
+2022-01-04 16:47:28,251 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': 'petrov', 'time': 1641304048.251167, 'mess_text': 'Test Petriv\n'}
+2022-01-04 16:47:28,290 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:47:28,290 INFO     transport.py Отправлено сообщение для пользователя petrov
+2022-01-04 16:47:28,292 DEBUG    transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'kuznetsov', 'to': 'petrov', 'time': 1641304048.251167, 'mess_text': 'Test Petriv\n'}
+2022-01-04 16:47:28,292 DEBUG    transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'kuznetsov', 'to': 'petrov', 'time': 1641304048.251167, 'mess_text': 'Test Petriv\n'}
+2022-01-04 16:47:28,292 DEBUG    transport.py Получено сообщение от пользователя kuznetsov:Test Petriv
+
+2022-01-04 16:47:28,293 DEBUG    main_window.py Отправлено сообщение для petrov: Test Petriv
+
+2022-01-04 16:50:33,942 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:50:37,459 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: qqq
+2022-01-04 16:50:37,498 DEBUG    decos.py Была вызвана функция connection_init c параметрами (7777, '127.0.0.1'), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции __init__
+2022-01-04 16:50:37,498 INFO     transport.py Попытка подключения №1
+2022-01-04 16:50:37,502 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:50:37,503 DEBUG    decos.py Была вызвана функция create_presence c параметрами (), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-04 16:50:37,503 DEBUG    transport.py Сформировано presence сообщение для пользователя qqq
+2022-01-04 16:50:38,024 DEBUG    decos.py Была вызвана функция process_server_ans c параметрами ({'response': 200},), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-04 16:50:38,025 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:50:38,025 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:50:38,025 DEBUG    decos.py Была вызвана функция user_list_update c параметрами (), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции __init__
+2022-01-04 16:50:38,025 DEBUG    transport.py Запрос списка известных пользователей qqq
+2022-01-04 16:50:38,542 DEBUG    decos.py Была вызвана функция contacts_list_update c параметрами (), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции __init__
+2022-01-04 16:50:38,542 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:50:38,542 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641304238.542878, 'user': 'qqq'}
+2022-01-04 16:50:39,035 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-01-04 16:50:39,068 DEBUG    decos.py Была вызвана функция run c параметрами (), {}. Вызов из модуля client.transport.Вызов из функции self._bootstrap_inner().Вызов из функции _bootstrap_inner
+2022-01-04 16:50:39,068 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:51:50,985 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': 'petrov', 'time': 1641304310.985086, 'mess_text': 'Проверка\n'}
+2022-01-04 16:52:05,512 DEBUG    transport.py Транспорт завершает работу.
+2022-01-04 16:52:13,198 DEBUG    transport.py Транспорт завершает работу.
+2022-01-04 16:52:33,756 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:52:41,121 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 16:52:41,152 DEBUG    decos.py Была вызвана функция connection_init c параметрами (7777, '127.0.0.1'), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции __init__
+2022-01-04 16:52:41,152 INFO     transport.py Попытка подключения №1
+2022-01-04 16:52:41,156 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:52:41,157 DEBUG    decos.py Была вызвана функция create_presence c параметрами (), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-04 16:52:41,157 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 16:52:41,678 DEBUG    decos.py Была вызвана функция process_server_ans c параметрами ({'response': 200},), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-04 16:52:41,679 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:52:41,679 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:52:41,679 DEBUG    decos.py Была вызвана функция user_list_update c параметрами (), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции __init__
+2022-01-04 16:52:41,679 DEBUG    transport.py Запрос списка известных пользователей kuznetsov
+2022-01-04 16:52:42,191 DEBUG    decos.py Была вызвана функция contacts_list_update c параметрами (), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции __init__
+2022-01-04 16:52:42,191 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:52:42,191 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641304362.191921, 'user': 'kuznetsov'}
+2022-01-04 16:52:42,686 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['petrov', 'qqq', 'client_2']}
+2022-01-04 16:52:42,731 DEBUG    decos.py Была вызвана функция run c параметрами (), {}. Вызов из модуля client.transport.Вызов из функции self._bootstrap_inner().Вызов из функции _bootstrap_inner
+2022-01-04 16:52:42,732 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:53:32,589 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:53:38,264 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 16:53:38,288 INFO     transport.py Попытка подключения №1
+2022-01-04 16:53:38,292 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:53:38,293 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 16:53:43,293 CRITICAL transport.py Потеряно соединение с сервером!
+2022-01-04 16:54:05,258 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:54:09,278 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 16:54:09,306 INFO     transport.py Попытка подключения №1
+2022-01-04 16:54:09,310 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:54:09,311 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 16:54:14,312 CRITICAL transport.py Потеряно соединение с сервером!
+2022-01-04 16:55:00,136 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:55:04,690 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 16:55:04,722 INFO     transport.py Попытка подключения №1
+2022-01-04 16:55:04,726 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:55:04,726 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 16:55:05,248 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:55:05,248 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:55:05,248 DEBUG    transport.py Запрос списка известных пользователей kuznetsov
+2022-01-04 16:55:05,762 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:55:05,762 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641304505.762954, 'user': 'kuznetsov'}
+2022-01-04 16:55:06,256 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['petrov', 'qqq', 'client_2']}
+2022-01-04 16:55:06,276 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:55:12,683 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:55:16,141 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: petrov
+2022-01-04 16:55:16,169 INFO     transport.py Попытка подключения №1
+2022-01-04 16:55:16,173 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:55:16,174 DEBUG    transport.py Сформировано presence сообщение для пользователя petrov
+2022-01-04 16:55:16,686 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:55:16,686 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:55:16,686 DEBUG    transport.py Запрос списка известных пользователей petrov
+2022-01-04 16:55:17,199 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:55:17,199 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641304517.199884, 'user': 'petrov'}
+2022-01-04 16:55:17,692 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['kuznetsov', 'qqq']}
+2022-01-04 16:55:17,710 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:55:26,380 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'petrov', 'to': 'kuznetsov', 'time': 1641304526.3805, 'mess_text': 'Сам такой\n'}
+2022-01-04 16:55:27,220 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:55:27,220 INFO     transport.py Отправлено сообщение для пользователя kuznetsov
+2022-01-04 16:55:27,220 DEBUG    transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'petrov', 'to': 'kuznetsov', 'time': 1641304526.3805, 'mess_text': 'Сам такой\n'}
+2022-01-04 16:55:27,221 DEBUG    transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'petrov', 'to': 'kuznetsov', 'time': 1641304526.3805, 'mess_text': 'Сам такой\n'}
+2022-01-04 16:55:27,221 DEBUG    transport.py Получено сообщение от пользователя petrov:Сам такой
+
+2022-01-04 16:55:27,223 DEBUG    main_window.py Отправлено сообщение для kuznetsov: Сам такой
+
+2022-01-04 16:55:43,943 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:55:48,291 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: qqq
+2022-01-04 16:55:48,314 DEBUG    decos.py Была вызвана функция connection_init c параметрами (7777, '127.0.0.1'), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции __init__
+2022-01-04 16:55:48,314 INFO     transport.py Попытка подключения №1
+2022-01-04 16:55:48,318 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:55:48,319 DEBUG    decos.py Была вызвана функция create_presence c параметрами (), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-04 16:55:48,319 DEBUG    transport.py Сформировано presence сообщение для пользователя qqq
+2022-01-04 16:55:48,913 DEBUG    decos.py Была вызвана функция process_server_ans c параметрами ({'response': 200},), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-04 16:55:48,913 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:55:48,913 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:55:48,914 DEBUG    decos.py Была вызвана функция user_list_update c параметрами (), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции __init__
+2022-01-04 16:55:48,914 DEBUG    transport.py Запрос списка известных пользователей qqq
+2022-01-04 16:55:49,424 DEBUG    decos.py Была вызвана функция contacts_list_update c параметрами (), {}. Вызов из модуля client.transport.Вызов из функции client_name).Вызов из функции __init__
+2022-01-04 16:55:49,424 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:55:49,424 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641304549.424582, 'user': 'qqq'}
+2022-01-04 16:55:49,923 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-01-04 16:55:49,946 DEBUG    decos.py Была вызвана функция run c параметрами (), {}. Вызов из модуля client.transport.Вызов из функции self._bootstrap_inner().Вызов из функции _bootstrap_inner
+2022-01-04 16:55:49,947 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:56:01,366 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:56:03,457 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: qqq
+2022-01-04 16:56:03,486 INFO     transport.py Попытка подключения №1
+2022-01-04 16:56:03,490 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:56:03,490 DEBUG    transport.py Сформировано presence сообщение для пользователя qqq
+2022-01-04 16:56:08,490 CRITICAL transport.py Потеряно соединение с сервером!
+2022-01-04 16:56:34,014 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:56:38,588 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-04 16:56:38,616 INFO     transport.py Попытка подключения №1
+2022-01-04 16:56:38,621 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:56:38,621 DEBUG    transport.py Сформировано presence сообщение для пользователя kuznetsov
+2022-01-04 16:56:39,140 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:56:39,141 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:56:39,141 DEBUG    transport.py Запрос списка известных пользователей kuznetsov
+2022-01-04 16:56:39,651 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:56:39,652 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641304599.652093, 'user': 'kuznetsov'}
+2022-01-04 16:56:40,151 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['petrov', 'qqq', 'client_2']}
+2022-01-04 16:56:40,172 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:56:47,313 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': 'petrov', 'time': 1641304607.31308, 'mess_text': 'eeee'}
+2022-01-04 16:56:48,166 DEBUG    transport.py Разбор сообщения от сервера: {'response': 400, 'error': 'Пользователь не зарегистрирован на сервере.'}
+2022-01-04 16:56:54,021 DEBUG    decos.py Была вызвана функция add_default_in_arg_parser c параметрами ({'addr': '127.0.0.1', 'port': 7777, '--name': None},), {}. Вызов из модуля common.utils.Вызов из функции None}).Вызов из функции <module>
+2022-01-04 16:56:56,555 INFO     client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: qqq
+2022-01-04 16:56:56,583 INFO     transport.py Попытка подключения №1
+2022-01-04 16:56:56,588 DEBUG    transport.py Установлено соединение с сервером
+2022-01-04 16:56:56,588 DEBUG    transport.py Сформировано presence сообщение для пользователя qqq
+2022-01-04 16:56:57,100 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:56:57,100 INFO     transport.py Соединение с сервером успешно установлено.
+2022-01-04 16:56:57,100 DEBUG    transport.py Запрос списка известных пользователей qqq
+2022-01-04 16:56:57,615 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-04 16:56:57,615 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1641304617.6152241, 'user': 'qqq'}
+2022-01-04 16:56:58,106 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-01-04 16:56:58,107 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-04 16:57:03,280 DEBUG    transport.py Запрос списка известных пользователей qqq
+2022-01-04 16:57:03,628 DEBUG    add_contact.py Обновление списка пользователей с сервера выполнено
+2022-01-04 16:57:05,145 DEBUG    transport.py Создание контакта kuznetsov
+2022-01-04 16:57:06,139 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:57:06,147 INFO     main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x7fa8272a1820>
+2022-01-04 16:57:33,729 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'qqq', 'to': 'kuznetsov', 'time': 1641304653.7291148, 'mess_text': 'Lets go!!!'}
+2022-01-04 16:57:34,702 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-04 16:57:34,702 INFO     transport.py Отправлено сообщение для пользователя kuznetsov
+2022-01-04 16:57:34,705 DEBUG    main_window.py Отправлено сообщение для kuznetsov: Lets go!!!
+2022-01-04 16:57:35,305 DEBUG    transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'qqq', 'to': 'kuznetsov', 'time': 1641304653.7291148, 'mess_text': 'Lets go!!!'}
+2022-01-04 16:57:35,305 DEBUG    transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'qqq', 'to': 'kuznetsov', 'time': 1641304653.7291148, 'mess_text': 'Lets go!!!'}
+2022-01-04 16:57:35,305 DEBUG    transport.py Получено сообщение от пользователя qqq:Lets go!!!
+2022-01-04 16:57:43,334 DEBUG    transport.py Транспорт завершает работу.
+2022-01-04 16:57:43,838 DEBUG    transport.py Потеряно соединение с сервером.
+2022-01-04 16:57:43,880 DEBUG    transport.py Транспорт завершает работу.
+2022-01-04 16:57:44,246 DEBUG    transport.py Потеряно соединение с сервером.

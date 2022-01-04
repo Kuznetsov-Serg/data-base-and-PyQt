@@ -1,5 +1,8 @@
+import os
+import sys
 from sqlalchemy import create_engine, Table, Column, Integer, String, Text, MetaData, DateTime
 from sqlalchemy.orm import mapper, sessionmaker
+sys.path.append('../')
 from common.variables import *
 import datetime
 
@@ -32,7 +35,7 @@ class ClientDatabase:
         # Создаём движок базы данных, поскольку разрешено несколько клиентов одновременно, каждый должен иметь свою БД
         # Поскольку клиент мультипоточный необходимо отключить проверки на подключения с разных потоков,
         # иначе sqlite3.ProgrammingError
-        self.database_engine = create_engine(f'sqlite:///client_{name}.db3', echo=False, pool_recycle=7200,
+        self.database_engine = create_engine(f'sqlite:///client/database/client_{name}.db3', echo=False, pool_recycle=7200,
                                              connect_args={'check_same_thread': False})
 
         # Создаём объект MetaData

@@ -76,7 +76,7 @@ class ServerDB:
 
     def __init__(self, path):
         # Создаём движок базы данных
-        # path - server_base.db3
+        # path - server_database.db3
         # echo=False - отключает вывод на экран sql-запросов)
         # pool_recycle - по умолчанию соединение с БД через 8 часов простоя обрывается
         # Чтобы этого не случилось необходимо добавить pool_recycle=7200 (переустановка
@@ -254,7 +254,7 @@ class ServerDB:
 
 # Отладка
 if __name__ == '__main__':
-    db = ServerDB('server_base.db3')
+    db = ServerDB('server_database.db3')
 
     # Выполняем "подключение" пользователей
     db.user_login('client_1', '192.168.1.4', 8888)
