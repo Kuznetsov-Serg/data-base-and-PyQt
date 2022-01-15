@@ -33,7 +33,11 @@ def log_func(func_to_log):
     """Функция-декоратор для функций"""
     @wraps(func_to_log)
     def log_saver(*args, **kwargs):
-        ret = func_to_log(*args, **kwargs)
+        # Бывает, передаются параметры, но фунеция их не "ждет"
+        try:
+            ret = func_to_log(*args, **kwargs)
+        except:
+            ret = func_to_log()
         func_name = func_to_log.__name__ if hasattr(func_to_log, '__name__') else \
             func_to_log.name if hasattr(func_to_log, 'name') else ''
         LOGGER.debug(f'Была вызвана функция {func_name} c параметрами {args}, {kwargs}. '
