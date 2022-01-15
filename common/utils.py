@@ -1,65 +1,37 @@
-"""Утилиты"""
-
-import argparse
-import sys
 import json
+from Cryptodome.Cipher import AES
 
-sys.path.append('../')
-from common.variables import MAX_PACKAGE_LENGTH, ENCODING
-from errors import IncorrectDataRecivedError, NonDictInputError
-from decos import log_class, log_func
+# sys.path.append('../')
+from .variables import *
+from .decos import log_func
 
-
-
-@log_func
-def add_default_in_arg_parser(default_dict={}):
-    """
-    Парсер аргументов коммандной строки
-    :param default_dict: дополняет строку параметрами по умолчанию из передаваемого словаря
-    :return:
-    """
-    parser = argparse.ArgumentParser()
-    for key, value in default_dict.items():
-        if isinstance(value, int):
-            parser.add_argument(key, default=value, type=int, nargs='?')
-        else:
-            parser.add_argument(key, default=value, nargs='?')
-    # parser.add_argument('-p', default=7777, type=int, nargs='?')
-    # parser.add_argument('-a', default='', nargs='?')
-    return parser.parse_args(sys.argv[1:])
+# @log_func
+def get_message(client):
+    '''
+    Функция приёма сообщений от удалённых компьютеров.
+    Принимает сообщения JSON, декодирует полученное сообщение
+    и проверяет что получен словарь.
+    :param client: сокет для передачи данных.
+    :return: словарь - сообщение.
+    '''
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
+    json_response = encoded_response.decode(ENCODING)
+    response = json.loads(json_response)
+    if isinstance(response, dict):
+        return response
+    else:
+        raise TypeError
 
 
-# @log_class
-class MessageHandle:
-    @staticmethod
-    def get_message(client):
-        '''
-        Утилита приёма и декодирования сообщения
-        принимает байты выдаёт словарь, если принято что-то другое, отдаёт ошибку значения
-        :param client:
-        :return:
-        '''
-        encoded_response = client.recv(MAX_PACKAGE_LENGTH)
-        if isinstance(encoded_response, bytes):
-            json_response = encoded_response.decode(ENCODING)
-            response = json.loads(json_response)
-            if isinstance(response, dict):
-                return response
-            raise IncorrectDataRecivedError
-        raise IncorrectDataRecivedError
-
-
-    @staticmethod
-    def send_message(sock, message):
-        '''
-        Утилита кодирования и отправки сообщения
-        принимает словарь и отправляет его
-        :param sock:
-        :param message:
-        :return:
-        '''
-        if not isinstance(message, dict):
-            raise NonDictInputError
-        js_message = json.dumps(message)
-        encoded_message = js_message.encode(ENCODING)
-        sock.send(encoded_message)
+# @log_func
+def send_message(sock, message):
+    '''
+    Функция отправки словарей через сокет.
+    Кодирует словарь в формат JSON и отправляет через сокет.
+    :param sock: сокет для передачи
+    :param message: словарь для передачи
+    :return: ничего не возвращает
+    '''
+    js_message = json.dumps(message)
+    encoded_message = js_message.encode(ENCODING)
+    sock.send(encoded_message)
