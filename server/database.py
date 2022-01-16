@@ -5,13 +5,13 @@ import datetime
 
 class ServerStorage:
     '''
-    Класс - оболочка для работы с базой данных сервера.
-    Использует SQLite базу данных, реализован с помощью
-    SQLAlchemy ORM и используется классический подход.
+    Wrapper class for working with the server database.
+    Uses SQLite database, implemented with
+    SQLAlchemy ORM and the classical approach is used.
     '''
 
     class AllUsers:
-        '''Класс - отображение таблицы всех пользователей.'''
+        '''Class - displaying a table of all users.'''
 
         def __init__(self, username, passwd_hash):
             self.name = username
@@ -21,7 +21,7 @@ class ServerStorage:
             self.id = None
 
     class ActiveUsers:
-        '''Класс - отображение таблицы активных пользователей.'''
+        '''Class - displaying a table of active users.'''
 
         def __init__(self, user_id, ip_address, port, login_time):
             self.user = user_id
@@ -31,7 +31,7 @@ class ServerStorage:
             self.id = None
 
     class LoginHistory:
-        '''Класс - отображение таблицы истории входов.'''
+        '''Class - displaying the entry history table.'''
 
         def __init__(self, name, date, ip, port):
             self.id = None
@@ -41,7 +41,7 @@ class ServerStorage:
             self.port = port
 
     class UsersContacts:
-        '''Класс - отображение таблицы контактов пользователей.'''
+        '''Class - displaying a table of user contacts.'''
 
         def __init__(self, user, contact):
             self.id = None
@@ -49,7 +49,7 @@ class ServerStorage:
             self.contact = contact
 
     class UsersHistory:
-        '''Класс - отображение таблицы истории действий.'''
+        '''Class - displaying the action history table.'''
 
         def __init__(self, user):
             self.id = None
@@ -132,8 +132,8 @@ class ServerStorage:
 
     def user_login(self, username, ip_address, port, key):
         '''
-        Метод выполняющийся при входе пользователя, записывает в базу факт входа
-        Обновляет открытый ключ пользователя при его изменении.
+        The method executed when the user logs in records the fact of logging in to the database
+        Updates the user's public key when it is changed.
         '''
         # Запрос в таблицу пользователей на наличие там пользователя с таким
         # именем
@@ -167,8 +167,8 @@ class ServerStorage:
 
     def add_user(self, name, passwd_hash):
         '''
-        Метод регистрации пользователя.
-        Принимает имя и хэш пароля, создаёт запись в таблице статистики.
+        User registration method.
+        Accepts the name and password hash, creates an entry in the statistics table.
         '''
         user_row = self.AllUsers(name, passwd_hash)
         self.session.add(user_row)
@@ -178,7 +178,7 @@ class ServerStorage:
         self.session.commit()
 
     def remove_user(self, name):
-        '''Метод удаляющий пользователя из базы.'''
+        '''The method that removes the user from the database.'''
         user = self.session.query(self.AllUsers).filter_by(name=name).first()
         self.session.query(self.ActiveUsers).filter_by(user=user.id).delete()
         self.session.query(self.LoginHistory).filter_by(name=user.id).delete()
@@ -191,24 +191,24 @@ class ServerStorage:
         self.session.commit()
 
     def get_hash(self, name):
-        '''Метод получения хэша пароля пользователя.'''
+        '''Method of obtaining a hash of the user's password.'''
         user = self.session.query(self.AllUsers).filter_by(name=name).first()
         return user.passwd_hash
 
     def get_pubkey(self, name):
-        '''Метод получения публичного ключа пользователя.'''
+        '''The method of obtaining the user's public key.'''
         user = self.session.query(self.AllUsers).filter_by(name=name).first()
         return user.pubkey
 
     def check_user(self, name):
-        '''Метод проверяющий существование пользователя.'''
+        '''A method that verifies the existence of the user.'''
         if self.session.query(self.AllUsers).filter_by(name=name).count():
             return True
         else:
             return False
 
     def user_logout(self, username):
-        '''Метод фиксирующий отключения пользователя.'''
+        '''A method that fixes user disconnections.'''
         # Запрашиваем пользователя, что покидает нас
         user = self.session.query(
             self.AllUsers).filter_by(
@@ -221,7 +221,7 @@ class ServerStorage:
         self.session.commit()
 
     def process_message(self, sender, recipient):
-        '''Метод записывающий в таблицу статистики факт передачи сообщения.'''
+        '''A method that records the fact of message transmission in the statistics table.'''
         # Получаем ID отправителя и получателя
         sender = self.session.query(
             self.AllUsers).filter_by(
@@ -242,7 +242,7 @@ class ServerStorage:
         self.session.commit()
 
     def add_contact(self, user, contact):
-        '''Метод добавления контакта для пользователя.'''
+        '''The method of adding a contact for the user.'''
         # Получаем ID пользователей
         user = self.session.query(self.AllUsers).filter_by(name=user).first()
         contact = self.session.query(
@@ -264,7 +264,7 @@ class ServerStorage:
 
     # Функция удаляет контакт из базы данных
     def remove_contact(self, user, contact):
-        '''Метод удаления контакта пользователя.'''
+        '''Method of deleting a user's contact.'''
         # Получаем ID пользователей
         user = self.session.query(self.AllUsers).filter_by(name=user).first()
         contact = self.session.query(
@@ -284,7 +284,7 @@ class ServerStorage:
         self.session.commit()
 
     def users_list(self):
-        '''Метод возвращающий список известных пользователей со временем последнего входа.'''
+        '''A method that returns a list of known users with the time of the last login.'''
         # Запрос строк таблицы пользователей.
         query = self.session.query(
             self.AllUsers.name,
@@ -294,7 +294,7 @@ class ServerStorage:
         return query.all()
 
     def active_users_list(self):
-        '''Метод возвращающий список активных пользователей.'''
+        '''Method that returns a list of active users.'''
         # Запрашиваем соединение таблиц и собираем кортежи имя, адрес, порт,
         # время.
         query = self.session.query(
@@ -307,7 +307,7 @@ class ServerStorage:
         return query.all()
 
     def login_history(self, username=None):
-        '''Метод возвращающий историю входов.'''
+        '''Method that returns the history of inputs.'''
         # Запрашиваем историю входа
         query = self.session.query(self.AllUsers.name,
                                    self.LoginHistory.date_time,
@@ -321,7 +321,7 @@ class ServerStorage:
         return query.all()
 
     def get_contacts(self, username):
-        '''Метод возвращающий список контактов пользователя.'''
+        '''A method that returns a list of the user's contacts.'''
         # Запрашивааем указанного пользователя
         user = self.session.query(self.AllUsers).filter_by(name=username).one()
 
@@ -334,7 +334,7 @@ class ServerStorage:
         return [contact[1] for contact in query.all()]
 
     def message_history(self):
-        '''Метод возвращающий статистику сообщений.'''
+        '''A method that returns message statistics.'''
         query = self.session.query(
             self.AllUsers.name,
             self.AllUsers.last_login,

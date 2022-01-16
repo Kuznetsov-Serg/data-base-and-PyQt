@@ -9,8 +9,9 @@ from PyQt5.QtGui import QStandardItemModel, QStandardItem
 logger = logging.getLogger('client')
 
 
-# Диалог выбора контакта для удаления
+# Dialog for selecting a contact to delete
 class DelContactDialog(QDialog):
+    ''' Dialog for deleting a user from the contact list. '''
     def __init__(self, database):
         super().__init__()
         self.database = database
@@ -37,7 +38,7 @@ class DelContactDialog(QDialog):
         self.btn_cancel.move(230, 60)
         self.btn_cancel.clicked.connect(self.close)
 
-        # заполнитель контактов для удаления
+        # contact placeholder for deletion
         self.selector.addItems(sorted(self.database.get_contacts()))
 
 

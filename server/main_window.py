@@ -9,7 +9,7 @@ from server.remove_user import DelUserDialog
 
 
 class MainWindow(QMainWindow):
-    '''Класс - основное окно сервера.'''
+    '''The class is the main server window.'''
 
     def __init__(self, database, server, config):
         # Конструктор предка
@@ -86,7 +86,7 @@ class MainWindow(QMainWindow):
         self.show()
 
     def create_users_model(self):
-        '''Метод заполняющий таблицу активных пользователей.'''
+        '''A method that fills in the table of active users.'''
         list_users = self.database.active_users_list()
         list = QStandardItemModel()
         list.setHorizontalHeaderLabels(
@@ -109,25 +109,25 @@ class MainWindow(QMainWindow):
         self.active_clients_table.resizeRowsToContents()
 
     def show_statistics(self):
-        '''Метод создающий окно со статистикой клиентов.'''
+        '''A method that creates a window with customer statistics.'''
         global stat_window
         stat_window = StatWindow(self.database)
         stat_window.show()
 
     def server_config(self):
-        '''Метод создающий окно с настройками сервера.'''
+        '''Method that creates a window with server settings.'''
         global config_window
         # Создаём окно и заносим в него текущие параметры
         config_window = ConfigWindow(self.config)
 
     def reg_user(self):
-        '''Метод создающий окно регистрации пользователя.'''
+        '''A method that creates a user registration window.'''
         global reg_window
         reg_window = RegisterUser(self.database, self.server_thread)
         reg_window.show()
 
     def rem_user(self):
-        '''Метод создающий окно удаления пользователя.'''
+        '''A method that creates a user deletion window.'''
         global rem_window
         rem_window = DelUserDialog(self.database, self.server_thread)
         rem_window.show()

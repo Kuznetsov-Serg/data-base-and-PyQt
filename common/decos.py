@@ -1,4 +1,4 @@
-"""Декораторы"""
+"""Decorators"""
 
 import sys
 import socket
@@ -24,6 +24,7 @@ import inspect
 
 
 def get_module_name(arg):
+    """ Method for determining the startup source module ('client', 'server',...) """
     start = arg.rfind('/')+1
     end = arg.rfind('.py')
     return arg[start:end]
@@ -31,10 +32,10 @@ def get_module_name(arg):
 LOGGER = logging.getLogger(get_module_name(sys.argv[0]))
 
 def log_func(func_to_log):
-    """Функция-декоратор для функций"""
+    """Function decorator for functions"""
     @wraps(func_to_log)
     def log_saver(*args, **kwargs):
-        # Бывает, передаются параметры, но фунеция их не "ждет"
+        # It happens that parameters are passed, but the function does not "wait" for them
         try:
             ret = func_to_log(*args, **kwargs)
         except:
@@ -50,7 +51,7 @@ def log_func(func_to_log):
 
 
 def log_class(cls):
-    """Функция-декоратор для Классов"""
+    """Decorator function for Classes"""
     for name, method in cls.__dict__.items():
         if not name.startswith('_'):
             if isinstance(method, types.FunctionType) or not hasattr(method, '__func__'):
@@ -78,12 +79,12 @@ def method_decorator(func_to_log, is_static=False):
 
 def login_required(func):
     """
-    Декоратор, проверяющий, что клиент авторизован на сервере.
-    Проверяет, что передаваемый объект сокета находится в
-    списке авторизованных клиентов.
-    За исключением передачи словаря-запроса
-    на авторизацию. Если клиент не авторизован,
-    генерирует исключение TypeError
+    A decorator that verifies that the client is authorized on the server.
+    Checks that the transmitted socket object is in
+    the list of authorized clients.
+    Except for the transfer of the dictionary-
+    authorization request. If the client is not logged in,
+    generates a TypeError exception
     """
 
     def checker(*args, **kwargs):

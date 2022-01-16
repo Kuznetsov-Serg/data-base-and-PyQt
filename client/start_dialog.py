@@ -3,8 +3,7 @@ from PyQt5.QtWidgets import QDialog, QPushButton, QLineEdit, QApplication, QLabe
 
 class UserNameDialog(QDialog):
     '''
-    Класс реализующий стартовый диалог с запросом логина и пароля
-    пользователя.
+    A class that implements a start dialog with a user login and password request.
     '''
 
     def __init__(self):
@@ -43,7 +42,7 @@ class UserNameDialog(QDialog):
         self.show()
 
     def click(self):
-        '''Метод обрабтчик кнопки ОК.'''
+        '''The handler method of the OK button.'''
         if self.client_name.text() and self.client_passwd.text():
             self.ok_pressed = True
             qApp.exit()

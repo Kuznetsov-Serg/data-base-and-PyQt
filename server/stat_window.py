@@ -5,7 +5,7 @@ from PyQt5.QtCore import Qt
 
 class StatWindow(QDialog):
     '''
-    Класс - окно со статистикой пользователей
+    Class - a window with user statistics
     '''
 
     def __init__(self, database):
@@ -33,7 +33,7 @@ class StatWindow(QDialog):
         self.create_stat_model()
 
     def create_stat_model(self):
-        '''Метод реализующий заполнение таблицы статистикой сообщений.'''
+        '''A method that implements filling the table with message statistics.'''
         # Список записей из базы
         stat_list = self.database.message_history()
 

@@ -5543,3 +5543,60 @@ socket.timeout: timed out
 2022-01-16 00:40:50,967 DEBUG    transport.py Потеряно соединение с сервером.
 2022-01-16 00:40:55,002 DEBUG    transport.py Транспорт завершает работу.
 2022-01-16 00:40:59,887 DEBUG    transport.py Транспорт завершает работу.
+2022-01-16 18:18:33,957 DEBUG    decos.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-16 18:18:33,960 DEBUG    client.py Args loaded
+2022-01-16 18:18:38,396 DEBUG    client.py Using USERNAME = w, PASSWD = w.
+2022-01-16 18:18:38,396 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: w
+2022-01-16 18:18:38,464 DEBUG    client.py Keys successfully loaded.
+2022-01-16 18:18:38,492 INFO     transport.py Попытка подключения №1
+2022-01-16 18:18:38,494 DEBUG    transport.py Connection established.
+2022-01-16 18:18:38,494 DEBUG    transport.py Starting auth dialog.
+2022-01-16 18:18:38,504 DEBUG    transport.py Passwd hash ready: b'2a457e379de70d38b8f85ac63734f1c035a93ed6b2ce9d3e89f5bb5ca9b9954079e4c536a13a793527acd2d0a13e0272289f3eb339891dbe7aa250f835bb09d4'
+2022-01-16 18:18:38,505 DEBUG    transport.py Presense message = {'action': 'presence', 'time': 1642346318.5050838, 'user': {'account_name': 'w', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1q0KYP3zH5a6o+nP0cl5\nFsmBVoSoL1HxJBBDbaHUTa2rWhKqG0STgqgQoxpQ+i+WIonwWvpMv/4v6TeZHjih\nlasHaMEeDy2ZOHQ3d5iCQMUcGgreXiDwpgui7s/6A9SoXxgem1+hSujJwlomuNAb\nUnr/QqeOetAAhdtuXrlBADkQgq0iY7DhLmpa2MBArirX2fAxDpUgf9Djb+wO3/Wr\nSGopIOpZpS09NIHekHKOCJqu8Lbw0VgXOVrmTmQbFJEPaos6209XpU1L+ZyN84K/\nvuCXKCRH9vBDfkMxCAbhWHVsk7kMTQkejqdu8r1H/ZgF05oHO4iY7jJHUcBlcgx7\nTQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-01-16 18:18:39,008 DEBUG    transport.py Server response = {'response': 511, 'bin': 'a0316d71e348625c0c961d6df1e09246a78bb578e5e6de42a93307180f3255bf463f9b8f13337050137ef8ef7ff9df702721a8531811a7b5ece8c28cf5486f0a'}.
+2022-01-16 18:18:39,009 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-16 18:18:39,009 DEBUG    transport.py Запрос списка известных пользователей w
+2022-01-16 18:18:39,534 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-16 18:18:39,534 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1642346319.534297, 'user': 'w'}
+2022-01-16 18:18:40,026 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['kuznetsov', 'sidorov']}
+2022-01-16 18:18:40,045 DEBUG    client.py Transport ready.
+2022-01-16 18:18:40,045 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-16 18:18:42,434 DEBUG    transport.py Запрос публичного ключа для kuznetsov
+2022-01-16 18:18:42,531 DEBUG    main_window.py Загружен открытый ключ для kuznetsov
+2022-01-16 18:18:45,783 DEBUG    decos.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-16 18:18:45,784 DEBUG    client.py Args loaded
+2022-01-16 18:18:52,486 DEBUG    client.py Using USERNAME = kuznetsov, PASSWD = 123.
+2022-01-16 18:18:52,492 INFO     client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: kuznetsov
+2022-01-16 18:18:52,558 DEBUG    client.py Keys successfully loaded.
+2022-01-16 18:18:52,587 INFO     transport.py Попытка подключения №1
+2022-01-16 18:18:52,589 DEBUG    transport.py Connection established.
+2022-01-16 18:18:52,589 DEBUG    transport.py Starting auth dialog.
+2022-01-16 18:18:52,597 DEBUG    transport.py Passwd hash ready: b'dd324e112e4efbfbf89350bf623effcdeaae88add0c142ccc52f4b48658d530220f93afa11e249d704fe7f3252acac158ba7b69c6cdf7ede0b8a2edbcb3a5439'
+2022-01-16 18:18:52,597 DEBUG    transport.py Presense message = {'action': 'presence', 'time': 1642346332.5976472, 'user': {'account_name': 'kuznetsov', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApfjRhJI/Zhc24i0fljX0\nIgnAJS+q4HOhlCyY1p6+16SwlAA76zpQDLSrTTNMj2hlDBF92ePgAyYL2yLZL5q/\n+drVAX+MSLAkC+VORF9usHjasrv3aG0v3UCUSFVzdGGo59WD8a7XSH4f7oqwCGHP\n/vUOL8pEAONPChgMJQTf6rd60b56HlPColofK46RZeh8Xxi9EmrElXijPIEsNxVa\nUxEeL7lLm71GcZv+lgyTHA2xSZlR+VzXBeuzKeKl5g+qxFNx70bWNqi9LgD6ErjK\nJtEus3lUIZHP3STrd7w/ajkTX4ypfkpLdt5GY6tKTHPZcbz2wTSJ7NQqMFSTQz0t\nTQIDAQAB\n-----END PUBLIC KEY-----'}}
+2022-01-16 18:18:53,094 DEBUG    transport.py Server response = {'response': 511, 'bin': '22acfd530d349a33cdb5feac3d36bad0f93bab9801873114de4250d374eb78ba567f2faba4d9671bfdaea2218e7ef594344ae39d84bc7a89aa441d80f36bc4ee'}.
+2022-01-16 18:18:53,095 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-16 18:18:53,095 DEBUG    transport.py Запрос списка известных пользователей kuznetsov
+2022-01-16 18:18:53,618 DEBUG    transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-16 18:18:53,618 DEBUG    transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1642346333.6183932, 'user': 'kuznetsov'}
+2022-01-16 18:18:54,107 DEBUG    transport.py Получен ответ {'response': 202, 'data_list': ['w', 'sidorov']}
+2022-01-16 18:18:54,119 DEBUG    client.py Transport ready.
+2022-01-16 18:18:54,119 DEBUG    transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-16 18:18:57,052 DEBUG    transport.py Запрос публичного ключа для w
+2022-01-16 18:18:57,615 DEBUG    main_window.py Загружен открытый ключ для w
+2022-01-16 18:19:04,992 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'kuznetsov', 'to': 'w', 'time': 1642346344.992516, 'mess_text': 'S95PgEYa+hXm4sRnigvGRTxnJjlgmTxbMImQ39SEk2GIDdZ+BAZ8Y4GPjl6cXNXhHYJF+hxenJqCNB9W3KVm+51J2XM4wmv1G7jkpINXJKP52J5i5EneieRxf8bmYZfxtNFDi694Q4ZbTw2EpUC8G0TA+KLHVknFVE+YeEtgTAxeSZ04smOVPd9C6AUwNvKQGK6H7jcy/7aEJK/cBIYfArG4wglbBYpjmoV+D7Q1jDVWAjwUgvt+PR62s2Az9YZ9hBFM0A89gLTNU4r9vVt4gj+3e0ECa8i0wdpzSHdkPpX+bYA8ew0znFR7KeJhJXZEBLL+J2ai+Chud3EXvuToyQ=='}
+2022-01-16 18:19:05,141 DEBUG    transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'kuznetsov', 'to': 'w', 'time': 1642346344.992516, 'mess_text': 'S95PgEYa+hXm4sRnigvGRTxnJjlgmTxbMImQ39SEk2GIDdZ+BAZ8Y4GPjl6cXNXhHYJF+hxenJqCNB9W3KVm+51J2XM4wmv1G7jkpINXJKP52J5i5EneieRxf8bmYZfxtNFDi694Q4ZbTw2EpUC8G0TA+KLHVknFVE+YeEtgTAxeSZ04smOVPd9C6AUwNvKQGK6H7jcy/7aEJK/cBIYfArG4wglbBYpjmoV+D7Q1jDVWAjwUgvt+PR62s2Az9YZ9hBFM0A89gLTNU4r9vVt4gj+3e0ECa8i0wdpzSHdkPpX+bYA8ew0znFR7KeJhJXZEBLL+J2ai+Chud3EXvuToyQ=='}
+2022-01-16 18:19:05,141 DEBUG    transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'kuznetsov', 'to': 'w', 'time': 1642346344.992516, 'mess_text': 'S95PgEYa+hXm4sRnigvGRTxnJjlgmTxbMImQ39SEk2GIDdZ+BAZ8Y4GPjl6cXNXhHYJF+hxenJqCNB9W3KVm+51J2XM4wmv1G7jkpINXJKP52J5i5EneieRxf8bmYZfxtNFDi694Q4ZbTw2EpUC8G0TA+KLHVknFVE+YeEtgTAxeSZ04smOVPd9C6AUwNvKQGK6H7jcy/7aEJK/cBIYfArG4wglbBYpjmoV+D7Q1jDVWAjwUgvt+PR62s2Az9YZ9hBFM0A89gLTNU4r9vVt4gj+3e0ECa8i0wdpzSHdkPpX+bYA8ew0znFR7KeJhJXZEBLL+J2ai+Chud3EXvuToyQ=='}
+2022-01-16 18:19:05,141 DEBUG    transport.py Получено сообщение от пользователя kuznetsov:S95PgEYa+hXm4sRnigvGRTxnJjlgmTxbMImQ39SEk2GIDdZ+BAZ8Y4GPjl6cXNXhHYJF+hxenJqCNB9W3KVm+51J2XM4wmv1G7jkpINXJKP52J5i5EneieRxf8bmYZfxtNFDi694Q4ZbTw2EpUC8G0TA+KLHVknFVE+YeEtgTAxeSZ04smOVPd9C6AUwNvKQGK6H7jcy/7aEJK/cBIYfArG4wglbBYpjmoV+D7Q1jDVWAjwUgvt+PR62s2Az9YZ9hBFM0A89gLTNU4r9vVt4gj+3e0ECa8i0wdpzSHdkPpX+bYA8ew0znFR7KeJhJXZEBLL+J2ai+Chud3EXvuToyQ==
+2022-01-16 18:19:05,141 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-16 18:19:05,142 INFO     transport.py Отправлено сообщение для пользователя w
+2022-01-16 18:19:05,145 DEBUG    main_window.py Отправлено сообщение для w: Hi
+2022-01-16 18:19:31,531 DEBUG    transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'w', 'to': 'kuznetsov', 'time': 1642346371.531712, 'mess_text': 'b2i6t3/pNk2F5EA+j0lyZlWZLNvm+SvKVsWpoy6YcaQnIRYZrvcuxOihnGETT7IcJwWCs2S6SZvNgZxenqKifu/5KcM8chzH7uVxA7Bgt+N4YZPA/ruMw9SqptXxzvP2LXlxQX1Xy26Jp+jK5yo/ZobpDOXn+a9P1agV/UEeMvzz2avNxyiMi8su6jQtYCkeWnYcel+JtkgZ5nqqdoO5onu4KLbdb1o9ZHkaXz1C3kZzSVrWA5kAdZWvTMtqmltzHU/qYsYaiJneakjqSM8BauvlI+1O2UEOg7qlT2GiuwXe+FjHKdRO+g5p55rJqFfHCcBvc4puryiCWxhho3RKGA=='}
+2022-01-16 18:19:31,696 DEBUG    transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'w', 'to': 'kuznetsov', 'time': 1642346371.531712, 'mess_text': 'b2i6t3/pNk2F5EA+j0lyZlWZLNvm+SvKVsWpoy6YcaQnIRYZrvcuxOihnGETT7IcJwWCs2S6SZvNgZxenqKifu/5KcM8chzH7uVxA7Bgt+N4YZPA/ruMw9SqptXxzvP2LXlxQX1Xy26Jp+jK5yo/ZobpDOXn+a9P1agV/UEeMvzz2avNxyiMi8su6jQtYCkeWnYcel+JtkgZ5nqqdoO5onu4KLbdb1o9ZHkaXz1C3kZzSVrWA5kAdZWvTMtqmltzHU/qYsYaiJneakjqSM8BauvlI+1O2UEOg7qlT2GiuwXe+FjHKdRO+g5p55rJqFfHCcBvc4puryiCWxhho3RKGA=='}
+2022-01-16 18:19:31,697 DEBUG    transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'w', 'to': 'kuznetsov', 'time': 1642346371.531712, 'mess_text': 'b2i6t3/pNk2F5EA+j0lyZlWZLNvm+SvKVsWpoy6YcaQnIRYZrvcuxOihnGETT7IcJwWCs2S6SZvNgZxenqKifu/5KcM8chzH7uVxA7Bgt+N4YZPA/ruMw9SqptXxzvP2LXlxQX1Xy26Jp+jK5yo/ZobpDOXn+a9P1agV/UEeMvzz2avNxyiMi8su6jQtYCkeWnYcel+JtkgZ5nqqdoO5onu4KLbdb1o9ZHkaXz1C3kZzSVrWA5kAdZWvTMtqmltzHU/qYsYaiJneakjqSM8BauvlI+1O2UEOg7qlT2GiuwXe+FjHKdRO+g5p55rJqFfHCcBvc4puryiCWxhho3RKGA=='}
+2022-01-16 18:19:31,697 DEBUG    transport.py Получено сообщение от пользователя w:b2i6t3/pNk2F5EA+j0lyZlWZLNvm+SvKVsWpoy6YcaQnIRYZrvcuxOihnGETT7IcJwWCs2S6SZvNgZxenqKifu/5KcM8chzH7uVxA7Bgt+N4YZPA/ruMw9SqptXxzvP2LXlxQX1Xy26Jp+jK5yo/ZobpDOXn+a9P1agV/UEeMvzz2avNxyiMi8su6jQtYCkeWnYcel+JtkgZ5nqqdoO5onu4KLbdb1o9ZHkaXz1C3kZzSVrWA5kAdZWvTMtqmltzHU/qYsYaiJneakjqSM8BauvlI+1O2UEOg7qlT2GiuwXe+FjHKdRO+g5p55rJqFfHCcBvc4puryiCWxhho3RKGA==
+2022-01-16 18:19:31,697 DEBUG    transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-16 18:19:31,697 INFO     transport.py Отправлено сообщение для пользователя kuznetsov
+2022-01-16 18:19:31,699 DEBUG    main_window.py Отправлено сообщение для kuznetsov: и снова...
+2022-01-16 18:19:35,221 DEBUG    transport.py Транспорт завершает работу.
+2022-01-16 18:19:35,990 DEBUG    transport.py Потеряно соединение с сервером.
+2022-01-16 18:19:37,635 DEBUG    transport.py Транспорт завершает работу.

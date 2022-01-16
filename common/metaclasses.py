@@ -1,6 +1,6 @@
 """
-В основе метода библиотека dis - анализ кода с помощью его дизассемблирования
-(разбор кода на составляющие: в нашем случае - на атрибуты и методы класса)
+The dis library method is based on code analysis using its disassembly
+(parsing the code into components: in our case, into attributes and methods of the class)
 https://docs.python.org/3/library/dis.html
 """
 
@@ -9,9 +9,9 @@ import dis
 
 class ServerMaker(type):
     '''
-    Метакласс, проверяющий что в результирующем классе нет клиентских
-    вызовов таких как: connect. Также проверяется, что серверный
-    сокет является TCP и работает по IPv4 протоколу.
+    A metaclass that verifies that there are no client
+    calls such as: connect in the resulting class. It is also checked that the server
+    The socket is TCP and works over IPv4 protocol.
     '''
     def __init__(cls, clsname, bases, clsdict):
         # clsname - экземпляр метакласса - Server
@@ -74,9 +74,9 @@ class ServerMaker(type):
 
 class ClientMaker(type):
     '''
-    Метакласс, проверяющий что в результирующем классе нет серверных
-    вызовов таких как: accept, listen. Также проверяется, что сокет не
-    создаётся внутри конструктора класса.
+    A metaclass that verifies that the resulting class does not have server-side
+    calls such as: accept, listen. It is also checked that the socket is not
+    created inside the class constructor.
     '''
     def __init__(cls, clsname, bases, clsdict):
         # Список методов, которые используются в функциях класса:

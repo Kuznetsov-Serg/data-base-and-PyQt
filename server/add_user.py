@@ -5,7 +5,7 @@ import binascii
 
 
 class RegisterUser(QDialog):
-    """ Класс диалог регистрации пользователя на сервере. """
+    """ Class dialog for registering a user on the server. """
 
     def __init__(self, database, server):
         super().__init__()
@@ -57,7 +57,7 @@ class RegisterUser(QDialog):
 
     def save_data(self):
         """
-        Метод проверки правильности ввода и сохранения в базу нового пользователя.
+        A method for verifying the correctness of entering and saving a new user to the database.
         """
         if not self.client_name.text():
             self.messages.critical(

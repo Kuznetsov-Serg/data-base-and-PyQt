@@ -9,9 +9,9 @@ logger = logging.getLogger('client')
 
 class AddContactDialog(QDialog):
     '''
-    Диалог добавления пользователя в список контактов.
-    Предлагает пользователю список возможных контактов и
-    добавляет выбранный в контакты.
+    Dialog for adding a user to the contact list.
+    Offers the user a list of possible contacts and
+    adds the selected one to the contacts.
     '''
 
     def __init__(self, transport, database):
@@ -45,30 +45,30 @@ class AddContactDialog(QDialog):
         self.btn_cancel.move(230, 60)
         self.btn_cancel.clicked.connect(self.close)
 
-        # Заполняем список возможных контактов
+        # Fill in the list of possible contacts
         self.possible_contacts_update()
-        # Назначаем действие на кнопку обновить
+        # Assign an action to the update button
         self.btn_refresh.clicked.connect(self.update_possible_contacts)
 
     def possible_contacts_update(self):
         '''
-        Метод заполнения списка возможных контактов.
-        Создаёт список всех зарегистрированных пользователей
-        за исключением уже добавленных в контакты и самого себя.
+        Method of filling in the list of possible contacts.
+        Creates a list of all registered users
+        except for those already added to contacts and myself.
         '''
         self.selector.clear()
-        # множества всех контактов и контактов клиента
+        # sets of all contacts and contacts of the client
         contacts_list = set(self.database.get_contacts())
         users_list = set(self.database.get_users())
-        # Удалим сами себя из списка пользователей, чтобы нельзя было добавить самого себя
+        # We will remove ourselves from the list of users so that we cannot add ourselves
         users_list.remove(self.transport.username)
-        # Добавляем список возможных контактов
+        # Adding a list of possible contacts
         self.selector.addItems(users_list - contacts_list)
 
     def update_possible_contacts(self):
         '''
-        Метод обновления списка возможных контактов. Запрашивает с сервера
-        список известных пользователей и обносляет содержимое окна.
+        Method for updating the list of possible contacts. Requests from the server
+        the list of known users and updates the contents of the window.
         '''
         try:
             self.transport.user_list_update()

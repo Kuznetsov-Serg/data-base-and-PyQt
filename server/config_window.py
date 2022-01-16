@@ -4,7 +4,7 @@ import os
 
 
 class ConfigWindow(QDialog):
-    '''Класс окно настроек.'''
+    '''Class settings window.'''
 
     def __init__(self, config):
         super().__init__()
@@ -12,7 +12,7 @@ class ConfigWindow(QDialog):
         self.initUI()
 
     def initUI(self):
-        '''Настройки окна'''
+        '''Window Settings'''
         self.setFixedSize(365, 260)
         self.setWindowTitle('Настройки сервера')
         self.setAttribute(Qt.WA_DeleteOnClose)
@@ -90,7 +90,7 @@ class ConfigWindow(QDialog):
         self.save_btn.clicked.connect(self.save_server_config)
 
     def open_file_dialog(self):
-        '''Метод обработчик открытия окна выбора папки.'''
+        '''The handler method for opening the folder selection window.'''
         global dialog
         dialog = QFileDialog(self)
         path = dialog.getExistingDirectory()
@@ -100,9 +100,9 @@ class ConfigWindow(QDialog):
 
     def save_server_config(self):
         '''
-        Метод сохранения настроек.
-        Проверяет правильность введённых данных и
-        если всё правильно сохраняет ini файл.
+        The method of saving settings.
+        Checks the correctness of the entered data and
+        if everything saves the ini file correctly.
         '''
         global config_window
         message = QMessageBox()

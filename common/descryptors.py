@@ -13,9 +13,9 @@ else:
 
 class Port:
     """
-    Класс - дескриптор для номера порта.
-    Позволяет использовать только порты с 1023 по 65536.
-    При попытке установить неподходящий номер порта генерирует исключение.
+    The descriptor class for the port number.
+    Allows you to use only ports 1023 to 65536.
+    An exception is thrown when trying to set an unsuitable port number.
     """
 
     def __set__(self, instance, value):
