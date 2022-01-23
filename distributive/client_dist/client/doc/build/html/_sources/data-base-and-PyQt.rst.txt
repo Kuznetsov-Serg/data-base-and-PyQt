@@ -1,0 +1,63 @@
+data\-base\-and\-PyQt package
+=============================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   data-base-and-PyQt.client
+   data-base-and-PyQt.common
+   data-base-and-PyQt.server
+
+Submodules
+----------
+
+data\-base\-and\-PyQt.client module
+-----------------------------------
+
+.. automodule:: data-base-and-PyQt.client
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.server module
+-----------------------------------
+
+.. automodule:: data-base-and-PyQt.server
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.server\_db\_classic module
+------------------------------------------------
+
+.. automodule:: data-base-and-PyQt.server_db_classic
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.server\_gui module
+----------------------------------------
+
+.. automodule:: data-base-and-PyQt.server_gui
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.start\_clients\_mac module
+------------------------------------------------
+
+.. automodule:: data-base-and-PyQt.start_clients_mac
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: data-base-and-PyQt
+   :members:
+   :undoc-members:
+   :show-inheritance:

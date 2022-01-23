@@ -1,0 +1,61 @@
+data\-base\-and\-PyQt.common package
+====================================
+
+Submodules
+----------
+
+data\-base\-and\-PyQt.common.decos module
+-----------------------------------------
+
+.. automodule:: data-base-and-PyQt.common.decos
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.common.descryptors module
+-----------------------------------------------
+
+.. automodule:: data-base-and-PyQt.common.descryptors
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.common.errors module
+------------------------------------------
+
+.. automodule:: data-base-and-PyQt.common.errors
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.common.metaclasses module
+-----------------------------------------------
+
+.. automodule:: data-base-and-PyQt.common.metaclasses
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.common.utils module
+-----------------------------------------
+
+.. automodule:: data-base-and-PyQt.common.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.common.variables module
+---------------------------------------------
+
+.. automodule:: data-base-and-PyQt.common.variables
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: data-base-and-PyQt.common
+   :members:
+   :undoc-members:
+   :show-inheritance:
