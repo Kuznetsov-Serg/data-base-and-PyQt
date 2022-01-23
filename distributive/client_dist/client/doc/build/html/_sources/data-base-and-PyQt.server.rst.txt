@@ -1,0 +1,77 @@
+data\-base\-and\-PyQt.server package
+====================================
+
+Submodules
+----------
+
+data\-base\-and\-PyQt.server.add\_user module
+---------------------------------------------
+
+.. automodule:: data-base-and-PyQt.server.add_user
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.server.config\_window module
+--------------------------------------------------
+
+.. automodule:: data-base-and-PyQt.server.config_window
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.server.core module
+----------------------------------------
+
+.. automodule:: data-base-and-PyQt.server.core
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.server.database module
+--------------------------------------------
+
+.. automodule:: data-base-and-PyQt.server.database
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.server.database\_declarative module
+---------------------------------------------------------
+
+.. automodule:: data-base-and-PyQt.server.database_declarative
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.server.main\_window module
+------------------------------------------------
+
+.. automodule:: data-base-and-PyQt.server.main_window
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.server.remove\_user module
+------------------------------------------------
+
+.. automodule:: data-base-and-PyQt.server.remove_user
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.server.stat\_window module
+------------------------------------------------
+
+.. automodule:: data-base-and-PyQt.server.stat_window
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: data-base-and-PyQt.server
+   :members:
+   :undoc-members:
+   :show-inheritance:

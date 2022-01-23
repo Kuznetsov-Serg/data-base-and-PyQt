@@ -1,0 +1,69 @@
+data\-base\-and\-PyQt.client package
+====================================
+
+Submodules
+----------
+
+data\-base\-and\-PyQt.client.add\_contact module
+------------------------------------------------
+
+.. automodule:: data-base-and-PyQt.client.add_contact
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.client.database module
+--------------------------------------------
+
+.. automodule:: data-base-and-PyQt.client.database
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.client.del\_contact module
+------------------------------------------------
+
+.. automodule:: data-base-and-PyQt.client.del_contact
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.client.main\_window module
+------------------------------------------------
+
+.. automodule:: data-base-and-PyQt.client.main_window
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.client.main\_window\_conv module
+------------------------------------------------------
+
+.. automodule:: data-base-and-PyQt.client.main_window_conv
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.client.start\_dialog module
+-------------------------------------------------
+
+.. automodule:: data-base-and-PyQt.client.start_dialog
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+data\-base\-and\-PyQt.client.transport module
+---------------------------------------------
+
+.. automodule:: data-base-and-PyQt.client.transport
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: data-base-and-PyQt.client
+   :members:
+   :undoc-members:
+   :show-inheritance:
